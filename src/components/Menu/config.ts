@@ -37,14 +37,18 @@ const config: MenuEntry[] = [
     href: 'https://prataswap.vercel.app/lottery',
   },
   {
-    label: 'NFT',
+    label: 'Collectibles',
     icon: 'NftIcon',
     href: 'https://prataswap.vercel.app/nft',
   },
   {
+    label: 'Team Battle',
+    icon: 'TeamBattleIcon',
+    href: 'https://pancakeswap.finance/competition',
+  },
+  {
     label: 'Teams & Profile',
     icon: 'GroupsIcon',
-    calloutClass: 'rainbow',
     items: [
       {
         label: 'Leaderboard',
@@ -92,6 +96,10 @@ const config: MenuEntry[] = [
     icon: 'MoreIcon',
     items: [
       {
+        label: 'Contact',
+        href: 'https://docs.pancakeswap.finance/contact-us',
+      },
+      {
         label: 'Voting',
         href: 'https://voting.prataswap.vercel.app',
       },
@@ -106,6 +114,10 @@ const config: MenuEntry[] = [
       {
         label: 'Blog',
         href: 'https://pancakeswap.medium.com',
+      },
+      {
+        label: 'Merch',
+        href: 'https://pancakeswap.creator-spring.com/',
       },
     ],
   },
