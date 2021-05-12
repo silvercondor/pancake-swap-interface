@@ -105,7 +105,7 @@ const Swap = () => {
 
   // Manage disabled trading pairs that should redirect users to V2
   useEffect(() => {
-    const disabledSwaps = ['']
+    const disabledSwaps = ['BNB', 'BUSD', 'USDT', 'USDC', 'CAKE', 'BUNNY', 'ETH', 'BTCB', 'AUTO', 'XVS']
     const inputCurrencySymbol = currencies[Field.INPUT]?.symbol || ''
     const outputCurrencySymbol = currencies[Field.OUTPUT]?.symbol || ''
     const doesInputMatch = disabledSwaps.includes(inputCurrencySymbol)
@@ -133,7 +133,7 @@ const Swap = () => {
       }
 
       if (modalCountdownSecondsRemaining <= 0) {
-        window.location.href = 'https://exchange.pancakeswap.finance/#/swap'
+        window.location.href = 'https://test-prataswap-exchange.vercel.app/#/swap'
       }
 
       return () => {
